@@ -1,0 +1,89 @@
+@import url("./header.css");
+@import url("./theme.css");
+@import url("./dsa.css");
+@import url("./footer.css");
+
+body {
+    /* Remove default margins to give us full coverage of the screen. */
+    margin: 0;
+    
+    /* Define a grid with a header, main, and footer section */
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    
+    /* 
+     Set size of the three sections to provide the header and footer enough
+     space for their content, and let main expand to fill the whole screen.
+     Setting the min-height of body to 100vh (100% of the view height) is needed
+     for the browser to calculate the height of 1fr. 
+    */
+    min-height: 100vh; 
+    grid-template-rows: auto 1fr auto;
+}
+
+/* Set each section in its respective grid area. */
+header {
+    grid-area: header
+}
+
+main {
+    grid-area: main
+}
+
+footer {
+    grid-area: footer
+}
+
+main section {
+    margin: 0 2rem;
+    text-justify:distribute;
+    color: var(--color-main-text);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+main a {
+    color: var(--color-main-highlight);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center
+}
+
+#hero {
+    background-image: url("../images/dsa_group.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: calc(100vh - var(--height-logo) - 2rem);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 4vh;
+    padding: 1rem;
+}
+
+#hero span {
+    font-size: 6vh;
+    text-align: center;
+    color: var(--color-main-highlight);
+    text-shadow: black 1vw 1vw 2vw;
+    font-weight: bold;
+}
+@media screen and (min-width: 800px) {
+    main section {
+        margin: 0 8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main section {
+        margin: 0 auto;
+        width: 800px
+    }
+}

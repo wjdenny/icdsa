@@ -1,0 +1,27 @@
+{% extends "base.njk" %}
+
+{% block head %}
+    {{ super() }}
+    <link rel="stylesheet" href="/assets/css/hero.css">
+{% endblock %}
+
+{% block main %}
+<main>
+    <div id="hero">
+        <span>Iowa City</span>
+        <span>Democratic Socialists of America</span>
+    </div>
+    <section>
+        {{ content | safe }}
+    </section>
+
+    <section>
+        <h2>Current Projects</h2>
+        <ul>
+            {% for project in collections.projects %}
+                <li><a href="{{ project.url}}">{{ project.data.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+</main>
+{% endblock %}

@@ -1,0 +1,107 @@
+/* Define a grid for the header including a logo, title, hamburger menu, and the nav menu */
+header {
+    display: grid;
+    grid-template-areas:
+        "logo title"
+        "nav  nav";
+    grid-template-columns: var(--height-logo) 1fr;
+    width: 100%;
+}
+
+.site-title {
+    grid-area: title;
+}
+
+.site-logo {
+    grid-area: logo;
+}
+
+header nav {
+    grid-area: nav;
+}
+
+/* Use theme.css background and foreground color */
+header {
+    background-color: var(--color-nav-background);
+    color: var(--color-nav-text);
+}
+
+.site-title a {
+    color: var(--color-nav-text);
+}
+
+
+/* 
+    Other styles for the site title. Adjust the margins to look nice, remove the
+    default bold styling, and remove text decoration on the link.
+*/
+.site-title {
+    margin: auto auto 1rem 1rem;
+    font-weight: normal;
+}
+
+.site-title a {
+    text-decoration: none;
+}
+
+/* Set the logo to the same size, squared, as the header itself. */
+.site-logo {
+    width: var(--height-logo);
+    height: var(--height-logo);
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: flex-end;
+    font-size: 1.2rem;
+    height: 100%;
+}
+
+nav li {
+    width: 4rem;
+    text-align: center;
+}
+
+nav a {
+    /* Use theme.css background and foreground color and remove underlining. */
+    color: var(--color-nav-text);
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: 2px solid var(--color-nav-text);
+}
+
+nav {
+    margin-bottom: 1rem;
+}
+
+/* Styles specific to large-width (> 800px) screens */
+@media screen and (min-width: 800px) {
+    header {
+        grid-template-areas: 
+            "logo title nav";
+        grid-template-columns: var(--height-logo) 15rem 1fr;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        padding-right: 2rem;
+    }
+}
+
+/* 
+Breakpoints:
+
+Mobile, 320-480
+small screens, 481-1024
+large, 1025-1200
+huge, 1201+
+*/

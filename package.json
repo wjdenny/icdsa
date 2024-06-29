@@ -1,0 +1,19 @@
+{
+  "name": "icdsa-11ty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "serve": "eleventy --watch & live-server --port=8080 public/",
+    "build": "eleventy",
+    "clean": "rm --recursive public/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "live-server": "^1.2.2"
+  }
+}

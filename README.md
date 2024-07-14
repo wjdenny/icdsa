@@ -11,13 +11,13 @@ Content can be edited with at least a minimal knowledge of [Markdown](https://ww
 
 All content for the website is stored in the [./src](./src) directory. Files ending in *.md (such as [index.md](index.md)) are web pages written in Markdown. There may also be web pages in other directories within [./src](./src) such as [./src/projects](./src/projects) which holds pages that describe various projects that the IC DSA is working on. The [./src/assets] folder will contain other files like images, css, and javascript that are loaded by the web pages. Folders with an underscore "_" should be avoided, as these will contain important templates or data that make the website run; these are managed by developers.
 
-### Development
+## Development
 Changing the layout or theme will require more skills, including Node.js, [Nunjucks](https://mozilla.github.io/nunjucks/), [11ty](https://www.11ty.dev/), HTML, and CSS.
 
 ### Installing Node.js and Node Package Manager (NPM)
 Node.js (and NPM) is available on a wide variety of operating systems (including Windows, Linux, and MacOS). Often, package managers used by these systems have outdated builds of Node.js. To install Node.js, it may be best to [go to their website](https://nodejs.org/en/download/package-manager) and follow the instructions there to get the latest version and use a version manager.
 
-#### Getting started
+### Getting started
 This is a quick-start guide starting from a fresh clone with Node.js and NPM installed. Feel free to add additional sections as needed for clarity.
 
 ```

@@ -4,11 +4,12 @@ The IC DSA website was originally hosted on Wix. We have decided to [cancel our 
 
 A development (demo) version of the website is available at <https://icdsa.wjdenny.com>.
 
-## How to Contribute
 Members with varying technical skills can contribute to the development of the website and its content. 
 
-### Editing Content
+## Editing Content
 Content can be edited with at least a minimal knowledge of [Markdown](https://www.markdownguide.org/basic-syntax/), though some knowledge of YAML and HTML would be helpful as well.
+
+All content for the website is stored in the [./src](./src) directory. Files ending in *.md (such as [index.md](index.md)) are web pages written in Markdown. There may also be web pages in other directories within [./src](./src) such as [./src/projects](./src/projects) which holds pages that describe various projects that the IC DSA is working on. The [./src/assets] folder will contain other files like images, css, and javascript that are loaded by the web pages. Folders with an underscore "_" should be avoided, as these will contain important templates or data that make the website run; these are managed by developers.
 
 ### Development
 Changing the layout or theme will require more skills, including Node.js, [Nunjucks](https://mozilla.github.io/nunjucks/), [11ty](https://www.11ty.dev/), HTML, and CSS.

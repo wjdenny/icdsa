@@ -28,3 +28,21 @@ npm run serve
 ```
 
 The `npm run serve` command can be used any time to build and view local changes to the project.
+
+## Conventional Commits
+This project uses [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#summary) to ensure consistent and understandable commit messages. This builds on the basic idea of Semantic Versioning with updates labeled patch, minor, and major. The only "major" or "breaking change" commits in this project would be commits that would break people's links or bookmarks to the site; so any changes to filenames of web pages or directories that contain web pages. See examples below.
+
+Commit messages should be prefixed with either `fix: `, `feat: `, or `style: ` depending on the type of change. Fix commits are changes that correct some behavior that was not working properly. This might include a buggy template or CSS or wrong information on a web page. Feature (feat) commits add new functionality to the website. This would include a new webpage or a new template. Style commits can either change the CSS of a website or make minor edits to content for clarity or flow None of these types of commits should render previously working links inaccessible. 
+
+Any changes that do break links should include an excalamation point after the label to identify it as a "breaking change." 
+
+### Examples
+```
+fix: index template now correctly lists all projects
+fix: update contact info for steering committee
+feat: index template now lists working groups
+feat: add minutes template for meeting minutes
+style: fix typo in bench building description
+style: use DSA-red color instead of basic red
+feat!: move site to www.iowacitydsa.org
+```

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "eleventy --serve",
-    "serve": "eleventy --watch & live-server --port=8080 public/",
+    "serve": "eleventy --watch && live-server --port=8080 public/",
     "build": "eleventy",
     "clean": "rm --recursive public/"
   },

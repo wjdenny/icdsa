@@ -18,5 +18,10 @@ Node.js is available on a wide variety of operating systems (including Windows, 
 This is a quick-start guide starting from a fresh clone with Node.js and NPM installed. Feel free to add additional sections as needed for clarity.
 
 ```
-git clone git@github.com:wjdenny/icdsa.git && cd icdsa && npm install && npm run serve
+git clone git@github.com:wjdenny/icdsa.git
+cd icdsa
+npm install
+npm run serve
 ```
+
+The `npm run serve` command can be used any time to build and view local changes to the project.

@@ -11,8 +11,8 @@ Content can be edited with at least a minimal knowledge of [Markdown](https://ww
 ### Development
 Changing the layout or theme will require more skills, including Node.js, [Nunjucks](https://mozilla.github.io/nunjucks/), [11ty](https://www.11ty.dev/), HTML, and CSS.
 
-### Installing Node.js
-Node.js is available on a wide variety of operating systems (including Windows, Linux, and MacOS). Often, package managers used by these systems have outdated builds of Node.js. To install Node.js, it may be best to [go to their website](https://nodejs.org/en/download/package-manager) and follow the instructions there to get the latest version and use a version manager.
+### Installing Node.js and Node Package Manager (NPM)
+Node.js (and NPM) is available on a wide variety of operating systems (including Windows, Linux, and MacOS). Often, package managers used by these systems have outdated builds of Node.js. To install Node.js, it may be best to [go to their website](https://nodejs.org/en/download/package-manager) and follow the instructions there to get the latest version and use a version manager.
 
 #### Getting started
 This is a quick-start guide starting from a fresh clone with Node.js and NPM installed. Feel free to add additional sections as needed for clarity.

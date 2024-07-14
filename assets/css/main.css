@@ -3,6 +3,10 @@
 @import url("./dsa.css");
 @import url("./footer.css");
 
+:root {
+    font-size: 16px
+}
+
 body {
     /* Remove default margins to give us full coverage of the screen. */
     margin: 0;
@@ -69,7 +73,7 @@ h2 {
 }
 
 #hero span {
-    font-size: 6vh;
+    font-size: 15vw;
     text-align: center;
     color: var(--color-main-highlight);
     text-shadow: black 1vw 1vw 2vw;
@@ -78,6 +82,9 @@ h2 {
 @media screen and (min-width: 800px) {
     main section {
         margin: 0 8rem;
+    }
+    #hero span {
+        font-size: 10vw;
     }
 }
 

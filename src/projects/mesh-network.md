@@ -1,8 +1,8 @@
 # Mesh Network
 
-The mesh network project is working to create a citizen-owned and operated network to provide internet access to the Iowa City. community.  ICDSA is partnering with [Public Space One](http://www.publicspaceone.com/) to establish our first hubs in the network.
+The mesh network project is working to create a citizen-owned and operated network to provide internet access to the Iowa City community.  ICDSA is partnering with [Public Space One](http://www.publicspaceone.com/) to establish our first hubs in the network.
 
-This project takes inspiration from existing community mesh network projects, like [Freifunk](https://www.nycmesh.net/) and [NYC Mesh](https://www.nycmesh.net/).
+This project takes inspiration from existing community mesh network projects like [Freifunk](https://www.nycmesh.net/) and [NYC Mesh](https://www.nycmesh.net/).
 
 ## How does it work?
 
@@ -16,4 +16,4 @@ Currently we are working to create our first hub connection between the two Publ
 
 ## Want to help?
 
-We would love to work with you if you are interested in hosting a hub or lending your technical expertise to the project.  Join the ICDSA Discord (TODO: link?) and say "hi" in the #utilities-justice or #mesh-network-tech-talk channels.
+We would love to work with you if you are interested in hosting a hub or lending your technical expertise to the project. Join the ICDSA Discord (TODO: link?) and say "hi" in the #utilities-justice or #mesh-network-tech-talk channels.

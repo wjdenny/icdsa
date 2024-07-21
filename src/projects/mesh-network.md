@@ -18,4 +18,4 @@ Currently we are working to create our first hub connection between the two Publ
 
 ## Want to help?
 
-We would love to work with you if you are interested in hosting a hub or lending your technical expertise to the project. Join the ICDSA Discord (TODO: link?) and say "hi" in the #utilities-justice or #mesh-network-tech-talk channels.
+We would love to work with you if you are interested in hosting a hub or lending your technical expertise to the project. Join the [ICDSA Discord](https://discord.com/invite/rkqkEKvCyB) and say "hi" in the [#utilities-justice](https://discord.com/channels/695421616699605042/758850304484704327) or [#mesh-network-tech-talk](https://discord.com/channels/695421616699605042/964969623336407040) channels.

@@ -8,7 +8,9 @@ This project takes inspiration from existing community mesh network projects lik
 
 Hub sites will be connected via radio (TODO: hardware info) to connect hubs which will provide wifi access to citizens near the hub.
 
-TODO: install photos
+![](https://placehold.co/250)
+![](https://placehold.co/250)
+![](https://placehold.co/250)
 
 ## Project Status
 

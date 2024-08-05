@@ -1,96 +1,95 @@
-@import url("./header.css");
-@import url("./theme.css");
-@import url("./dsa.css");
-@import url("./footer.css");
+@import url("./grid.css");
 
-:root {
-    font-size: 16px
-}
+/* Default styles */
+* { margin: 0; padding: 0; }
+:root { font-size: 16px; }
+:root a { text-decoration: none; }
+:root { font-family: "S-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
+h1 { font-weight: normal; }
+ul, ol { list-style: none; }
 
-body {
-    /* Remove default margins to give us full coverage of the screen. */
-    margin: 0;
-    
-    /* Define a grid with a header, main, and footer section */
-    display: grid;
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-    
-    /* 
-     Set size of the three sections to provide the header and footer enough
-     space for their content, and let main expand to fill the whole screen.
-     Setting the min-height of body to 100vh (100% of the view height) is needed
-     for the browser to calculate the height of 1fr. 
-    */
-    min-height: 100vh; 
-    grid-template-rows: auto 1fr auto;
-}
+/* Text colors */
+.text-red { color: #EC1F27; }
+.text-red-1 { color: #F04C53; }
+.text-red-2 { color: #F4797E; }
+.text-red-3 { color: #F7A5A9; }
+.text-red-4 { color: #FBD2D4; }
+.text-black { color: #231F20; }
+.text-black-1 { color: #3B3838; }
+.text-black-2 { color: #605C5C; }
+.text-black-3 { color: #8C8989; }
+.text-black-4 { color: #C1C0BF; }
+.text-white { color: #FFFFFF; }
 
-/* Set each section in its respective grid area. */
-header {
-    grid-area: header
-}
+/* Background colors */
+.bg-red { background-color: #EC1F27; }
+.bg-red-1 { background-color: #F04C53; }
+.bg-red-2 { background-color: #F4797E; }
+.bg-red-3 { background-color: #F7A5A9; }
+.bg-red-4 { background-color: #FBD2D4; }
+.bg-black { background-color: #231F20; }
+.bg-black-1 { background-color: #3B3838; }
+.bg-black-2 { background-color: #605C5C; }
+.bg-black-3 { background-color: #8C8989; }
+.bg-black-4 { background-color: #C1C0BF; }
 
-main {
-    grid-area: main
-}
+/* Link text */
+.link-red a { color: #EC1F27; }
+.link-red-1 a { color: #F04C53; }
+.link-red-2 a { color: #F4797E; }
+.link-red-3 a { color: #F7A5A9; }
+.link-red-4 a { color: #FBD2D4; }
+.link-black a { color: #231F20; }
+.link-black-1 a { color: #3B3838; }
+.link-black-2 a { color: #605C5C; }
+.link-black-3 a { color: #8C8989; }
+.link-black-4 a { color: #C1C0BF; }
+.link-border a { text-decoration: solid 1px; }
 
-footer {
-    grid-area: footer
-}
+/* Other typography classes */
+/* Hero text is enormous, but reduced at higher resolutions. */
+.text-size-rxl { font-size: 15vw; } 
+@media screen and (min-width: 1200px) { .text-size-rxl { font-size: 11vw; } }
+.text-center { text-align: center; }
+.text-shadow { text-shadow: #231F20 -5px 5px 10px; }
+.text-justify { text-align: justify; text-justify: inter-word; }
+.text-line-sm { line-height: 1.3em; }
+.text-line-lg { line-height: 2em; }
+.text-nowrap { text-wrap: nowrap }
+.text-fade { opacity: 50%; }
 
-main section {
-    margin: 0 2rem;
-    text-justify:distribute;
-    color: var(--color-main-text);
-    text-align: justify;
-    text-justify: inter-word;
-}
+/* Margin and padding classes */
+.m-sm { margin: 1em; }
+.p-sm { padding: 1em; }
+.m-md { margin: 2em; }
+.p-md { padding: 2em; }
 
-main a {
-    color: var(--color-main-highlight);
-    text-decoration: none;
-    font-weight: bold;
-}
+/* Block sizing classes */
+.h-whole { height: 100vh; }
+.w-whole { width: 100vw; }
+.h-quarter { height: 25vh; }
+.w-quarter { width: 25vw; }
+.h-parent { height: 100%; }
+.w-parent { width: 100%; }
+.h-sm { height: 60px; }
+.w-sm { width: 60px; }
+.h-md { height: 80px; }
+.no-overflow { overflow: hidden; }
+.sm-hide { display: none; }
+@media screen and (min-width: 610) { .sm-hide { display: initial; } }
 
-h2 {
-    text-align: center
-}
+/* Alignment classes */
+.list-linear li { display: inline; }
+.list-spread { display: flex; column-gap: 1em; }
+.flex { display: flex; }
+.v-center { align-items: center; align-content: center; }
+.h-center { justify-content: center; justify-items: center; }
+.v-base { align-items: baseline; }
+.m-auto { margin: 0 auto; }
 
-#hero {
-    background-image: url("../images/dsa_group.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: calc(100vh - var(--height-logo) - 2rem);
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    gap: 4vh;
-    padding: 1rem;
-}
-
-#hero span {
-    font-size: 15vw;
-    text-align: center;
-    color: var(--color-main-highlight);
-    text-shadow: black 1vw 1vw 2vw;
-    font-weight: bold;
-}
-@media screen and (min-width: 800px) {
-    main section {
-        margin: 0 8rem;
-    }
-    #hero span {
-        font-size: 10vw;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    main section {
-        margin: 0 auto;
-        width: 800px
-    }
-}
+/* Image filters */
+.blur { filter: blur(1px); }
+.obscure { filter: brightness(25%) blur(15px); transform: scale(1.06); }
+.image-fit { background-size: cover; background-repeat: no-repeat; background-position: center center; }
+.image-background { position: absolute; z-index: -2; }
+section:has(> .image-background) { position: relative; }

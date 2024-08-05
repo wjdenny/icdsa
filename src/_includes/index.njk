@@ -1,20 +1,16 @@
 {% extends "base.njk" %}
 
-{% block head %}
-    {{ super() }}
-    <link rel="stylesheet" href="/assets/css/hero.css">
-{% endblock %}
-
 {% block main %}
-<main>
-    <div id="hero">
-        <span>Iowa City Democratic Socialists of America</span>
-    </div>
-    <section>
+<main class="no-overflow">
+    <section id="hero" class="h-whole w-whole">
+        <img class="image-fit image-background w-whole h-whole obscure" src="./assets/images/dsa_group.png" alt="Group photo of Iowa City DSA members taken a long time ago."" />
+        <div class="text-red text-size-rxl text-center blur text-shadow h-parent">Iowa City Democratic Socialists of America</span>
+    </section>
+    <section class="m-md text-line-sm text-justify" id="intro">
         {{ content | safe }}
     </section>
 
-    <section>
+    <section id="projects">
         <h2>Current Projects</h2>
         <ul>
             {% for project in collections.projects %}

@@ -8,6 +8,15 @@
 h1 { font-weight: normal; }
 ul, ol { list-style: none; }
 
+h2 { margin-top: 1em; }
+h3, h4, h5, h6 { margin-top: 1rem; }
+h2, h3, h4, h5, h6 { margin-bottom: 0.5rem; }
+p + p { margin-bottom: 1rem; }
+
+table { margin-top: 1rem; border-spacing: 2rem 0; }
+pre { margin: 1rem auto; width: 100%; }
+pre code { display: block; background-color: #d7d7d7; width: 100%; padding: 0.5rem; }
+
 /* Text colors */
 .text-red { color: #EC1F27; }
 .text-red-1 { color: #F04C53; }
@@ -55,7 +64,7 @@ ul, ol { list-style: none; }
 .text-justify { text-align: justify; text-justify: inter-word; }
 .text-line-sm { line-height: 1.3em; }
 .text-line-lg { line-height: 2em; }
-.text-nowrap { text-wrap: nowrap }
+.text-nowrap { text-wrap: nowrap; }
 .text-fade { opacity: 50%; }
 
 /* Margin and padding classes */
@@ -63,6 +72,7 @@ ul, ol { list-style: none; }
 .p-sm { padding: 1em; }
 .m-md { margin: 2em; }
 .p-md { padding: 2em; }
+.border { border: solid 1px black; }
 
 /* Block sizing classes */
 .h-whole { height: 100vh; }

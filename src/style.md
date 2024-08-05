@@ -56,59 +56,160 @@ These CSS classes can be used to set the colors of links in a template or Markdo
 | `.link-black-4` | <span class="link-black-4 text-black"><a href="#">.link-black-4</a></span> |
 
 ### Typography classes
+These are other CSS classes related to typography that might be useful.
 
-| CSS Class     | Description | Example |
-| ------------- | ------- | ----------- |
-| `.text-size-rxl` | set a extra large font size that scales with the width of the viewport (to a point) |  |
-| `.text-shadow` | set a text shadow | <span class="text-shadow">.text-shadow</span> |
-| `.text-justify` | justify text to the margins | <span class="text-justify">.text-justify</span> |
-| `.text-line-sm` | set a small line height | <span class="text-line-sm">.text-line-sm</span> |
-| `.text-line-lg` | set a large line height |  <span class="text-line-lg">.text-line-lg</span> |
-| `.text-nowrap` | disable word wrapping | <span class="text-nowrap">.text-nowrap</span> |
-| `.text-center` | center text in its parent element | <span style="display: block;" class="text-center">.text-center</span> |
-| `.blur` | blur the text | <span style="blur">.blur</span> |
+#### Relative font size
+Set text to an extra large font size that is relative to the width of the screen.
 
+<div class="text-center text-size-rxl">.text-size-rxl</div>
 
-### Spacing
+#### Text shadow
+Set a text shadow.
+
+<div class="text-center text-shadow">.text-shadow</div>
+
+#### Align text
+Justify text along the margins.
+
+```
+<p class="text-justify">Lorem...</p>
+```
+
+<p class="text-justify">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p>
+
+Center text.
+```
+<p class="text-center">Lorem...</p>
+```
+
+<p class="text-center">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p>
+
+#### Line height adjustments
+Adjust line heights in small and large sizing. 
+
+```
+<p class="text-line-sm">Lorem...</p>
+```
+
+<p class="text-line-sm">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p>
+
+```
+<p class="text-line-lg">Lorem...</p>
+```
+
+<p class="text-line-lg">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p>
+
+<!-- #### Text wraping
+Disable word wrapping.
+
+```
+<p class="text-nowrap">Lorem...</p>
+```
+
+<p class="text-nowrap">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p> -->
+
+#### Blur
+Blur text.
+
+```
+<p class="blur">Lorem...</p>
+```
+
+<p class="blur">Lorem ipsum odor amet, consectetuer adipiscing elit. Leo velit dui rhoncus vestibulum velit. Arcu hendrerit suscipit penatibus senectus placerat taciti eget. Sollicitudin conubia aenean dignissim at tempor himenaeos luctus curabitur varius. Nec laoreet ligula tempor magna sit semper. Enim hac platea amet curabitur maximus nulla. Sollicitudin torquent suscipit blandit eu ex quis magna. Euismod facilisi at sollicitudin enim suscipit.</p>
+
+### Margins
 Margin sets varying levels of outside space around the element. This style provides options for small and medium margins.
 
-| CSS Class     | Example |
-| ------------- | ------- |
-| `.m-sm`        | <div class="bg-red"><div class="text-center bg-red-4 m-sm">m-sm</div></div> |
-| `.m-md`        | <div class="bg-red"><div class="text-center bg-red-4 m-md">m-md</div></div> |
+<table>
+    <tr><pre>.m-sm</pre></tr>
+    <tr><td class="bg-red-4"><img class="border m-sm w-sm h-sm" src="https://robohash.org/.m-sm?set=set4"></img></td></tr>
+</table>
+<table>
+    <tr><pre>.m-md</pre></tr>
+    <tr><td class="bg-red-4"><img class="border m-md w-sm h-sm" src="https://robohash.org/.m-md?set=set4"></img></td></tr>
+</tr></table>
 
+### Padding 
 Padding sets varying levels of inside space around the element. This style provides options for small and medium levels of padding.
 
-| CSS Class     | Example |
-| ------------- | ------- |
-| `.p-sm`        | <div class="bg-red"><div class="text-center bg-red-4 p-sm">p-sm</div></div> |
-| `.p-md`        | <div class="bg-red"><div class="text-center bg-red-4 p-md">p-md</div></div> |
+<table>
+    <tr><td class="bg-red-4"><img class="border p-sm w-sm h-sm" src="https://robohash.org/.p-sm?set=set4"></img></td></tr>
+    <tr><pre>.p-sm</pre></tr>
+</table>
+<table>
+    <tr><td class="bg-red-4"><img class="border p-md w-sm h-sm" src="https://robohash.org/.p-md?set=set4"></img></td></tr>
+    <tr><pre>.p-md</pre></tr>
+</tr></table>
 
 ### Block sizing
-| CSS Class      | Description                             |
-| -------------- | ---------------------------------------  |
-| `.h-whole`      | sets element height to viewport height  | 
-| `.w-whole`      | sets element width to viewport width    | 
-| `.h-parent`    | sets element height to parent height    | 
-| `.w-parent`    | sets element width to parent width      | 
-| `.h-sm`        | sets height to small                    | 
-| `.w-sm`        | sets width to small                     | 
-| `.no-overflow` | hides overflowing content in an element |  
+#### .h-whole
+Set element height to viewport height.
+
+```
+<div class="h-whole"></div>
+```
+
+<div class="h-whole bg-red-4"></div>
+
+#### .w-whole
+Set element width to viewport width.
+
+```
+<div class="w-whole"></div>
+```
+
+<i>Not shown here so it doesn't break the page</i>
+
+#### .h-quarter
+Set element height to a quarter of the viewport height.
+
+```
+<div class="h-quarter"></div>
+```
+
+<div class="h-quarter bg-red-4"></div>
+
+#### .h-sm, .w-sm
+Set element height (or width) to a small size.
+
+```
+<div class="h-sm w-sm"></div>
+```
+
+<div class="h-sm w-sm bg-red-4"></div>
 
 ### Alignment
-| CSS Class     | Description | Example |
-| ------------- | ------- | ----------- |
-| `.list-linear` | linearize a list | <ol class="list-linear"><li>Item 1</li><li>Item 2</li></ul> |
-| `.list-spread` | spread list items; used with `.list-linear` | <ol class="list-linear list-spread"><li>Item 1</li><li>Item 2</li></ul> |
-| `.flex`     | make element a flex container | |
-| `.v-center` | vertically center child elements; used with `.flex` | <div class="flex v-center h-md"><ol class="list-linear list-spread"><li>Item 1</li><li>Item 2</li></ul></div> |
-| `.h-center` | horizontally center child elements; used with `.flex` | <div class="flex h-center h-md"><ol class="list-linear list-spread"><li>Item 1</li><li>Item 2</li></ul></div> |
-| `.v-base` | vertically place child elements along base; used with `.flex` | <div class="flex v-base h-md"><ol class="list-linear list-spread"><li>Item 1</li><li>Item 2</li></ul></div> |
+| CSS Class     | Description |
+| ------------- | ------- | 
+| `.list-linear` | linearize a list | 
+| `.list-spread` | spread list items; used with `.list-linear` |
+| `.flex`     | make element a flex container | 
+| `.v-center` | vertically center child elements; used with `.flex` |
+| `.h-center` | horizontally center child elements; used with `.flex` |
+| `.v-base` | vertically place child elements along base; used with `.flex` |
 
 ### Image filters
-| CSS Class     | Description | Example |
-| ------------- | ------- | ----------- |
-| `.blur` | blur the element | <img class="h-sm blur" src="https://robohash.org/.blur?set=set4" /> |
-| `.obscure` | obscure the element | <img class="h-sm obscure" src="https://robohash.org/.obscure?set=set4" /> |
-| `.image-fit` | center and expands an image within its dimensions | <img class="h-sm image-fit" src="https://robohash.org/.image-fit?set=set4" /> |
-| `.image-background` | move an image to the background of its parent element | <div class="text-center"><img style="display: inline;" class="h-sm image-fit image-background" src="https://robohash.org/.image-background?set=set4" /><span>.image-background</span></div> |
+#### .blur
+Blur the element.
+
+<div><img class="h-sm blur" src="https://robohash.org/.blur?set=set4" /></div>
+
+#### .obscure
+Obscure the image.
+
+<div><img class="h-sm obscure" src="https://robohash.org/.obscure?set=set4" /></div>
+
+#### .image-fit
+Cover, center and fit the image within its dimensions.
+
+<div>
+    <img class="h-sm image-fit" src="https://robohash.org/.image-fit?set=set4" />
+</div>
+
+#### .image-background
+Move the image to the background with its parent element.
+
+<div style="height: 8rem;">
+    <img class="h-sm image-background" src="https://robohash.org/.image-background?set=set4" />
+    <code>.image-background</code>
+</div>

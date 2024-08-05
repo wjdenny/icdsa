@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <title>Authoring Style Guide</title>
+        
+    </head>
+    <body class="full-height text-black link-red-1 text-sans-serif m0">
+        <header class="link-black text-black bg-red">
+    <a id="site-logo" href="/"><img class="h-sm w-sm" src="/assets/images/Main_Logo_Square_Small.png" alt="DSA logo showing a white and black hand grasping each other underneath a rose." /></a>
+    <div id="site-header" class="p-sm v-base">
+        <h1 id="site-title" class="text-nowrap link-black"><a href="/">Iowa City DSA</a></h1>
+        <nav id="site-nav">
+            <ul class="list-linear list-spread">
+                <li><a href="/about">About</a></li>
+                <li><a href="/events">Events</a></li>
+                <li><a href="https://act.dsausa.org/donate/membership/">Join</a></li>
+                <li><a href="https://donorbox.org/icdsa-donation">Donate</a></li>
+            </ul>
+        </nav> 
+    </div>
+</header>
+                    
+        
+        <main>
+            <section class="m-md text-justify">
+                <h2>Authoring Style Guide</h2>
+                <p>This document provides examples of the Iowa City DSA style guide, as well as the classes and the template functions used for various parts of a website. This is intended to be documentation for Iowa City DSA members to write updates to the website. Cat images lovingly delivered by <a href="https://robohash.org">Robohash.org</a>.</p>
+<h2>CSS classes</h2>
+<h3>Text color</h3>
+<p>These CSS classes can be used to set the colors of text in a template or Markdown file. It is recommended to stick to the DSA color palette defined here.</p>
+<table>
+<thead>
+<tr>
+<th>CSS Class</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.text-red</code></td>
+<td><span class="text-red">.text-red</span></td>
+</tr>
+<tr>
+<td><code>.text-red-1</code></td>
+<td><span class="text-red-1">.text-red-1</span></td>
+</tr>
+<tr>
+<td><code>.text-red-2</code></td>
+<td><span class="text-red-2">.text-red-2</span></td>
+</tr>
+<tr>
+<td><code>.text-red-3</code></td>
+<td><span class="text-red-3">.text-red-3</span></td>
+</tr>
+<tr>
+<td><code>.text-red-4</code></td>
+<td><span class="text-red-4">.text-red-4</span></td>
+</tr>
+<tr>
+<td><code>.text-black</code></td>
+<td><span class="text-black">.text-black</span></td>
+</tr>
+<tr>
+<td><code>.text-black-1</code></td>
+<td><span class="text-black-1">.text-black-1</span></td>
+</tr>
+<tr>
+<td><code>.text-black-2</code></td>
+<td><span class="text-black-2">.text-black-2</span></td>
+</tr>
+<tr>
+<td><code>.text-black-3</code></td>
+<td><span class="text-black-3">.text-black-3</span></td>
+</tr>
+<tr>
+<td><code>.text-black-4</code></td>
+<td><span class="text-black-4">.text-black-4</span></td>
+</tr>
+<tr>
+<td><code>.text-white</code></td>
+<td><span class="text-white">.text-white</span></td>
+</tr>
+</tbody>
+</table>
+<h3>Background colors</h3>
+<p>These CSS classes can be used to set the background colors of elements in a template or Markdown file. It is recommended to stick to the DSA color palette defined here.</p>
+<table>
+<thead>
+<tr>
+<th>CSS Class</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.bg-red</code></td>
+<td><span class="bg-red">.bg-red</span></td>
+</tr>
+<tr>
+<td><code>.bg-red-1</code></td>
+<td><span class="bg-red-1">.bg-red-1</span></td>
+</tr>
+<tr>
+<td><code>.bg-red-2</code></td>
+<td><span class="bg-red-2">.bg-red-2</span></td>
+</tr>
+<tr>
+<td><code>.bg-red-3</code></td>
+<td><span class="bg-red-3">.bg-red-3</span></td>
+</tr>
+<tr>
+<td><code>.bg-red-4</code></td>
+<td><span class="bg-red-4">.bg-red-4</span></td>
+</tr>
+<tr>
+<td><code>.bg-black</code></td>
+<td><span class="bg-black">.bg-black</span></td>
+</tr>
+<tr>
+<td><code>.bg-black-1</code></td>
+<td><span class="bg-black-1">.bg-black-1</span></td>
+</tr>
+<tr>
+<td><code>.bg-black-2</code></td>
+<td><span class="bg-black-2">.bg-black-2</span></td>
+</tr>
+<tr>
+<td><code>.bg-black-3</code></td>
+<td><span class="bg-black-3">.bg-black-3</span></td>
+</tr>
+<tr>
+<td><code>.bg-black-4</code></td>
+<td><span class="bg-black-4">.bg-black-4</span></td>
+</tr>
+</tbody>
+</table>
+<h3>Link colors</h3>
+<p>These CSS classes can be used to set the colors of links in a template or Markdown file. It is recommended to stick to the DSA color palette defined here. These classes must be set on the parent element where the links are; this makes it possible to use for templates.</p>
+<table>
+<thead>
+<tr>
+<th>CSS Class</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.link-red</code></td>
+<td><span class="link-red"><a href="#">.link-red</a></span></td>
+</tr>
+<tr>
+<td><code>.link-red-1</code></td>
+<td><span class="link-red-1"><a href="#">.link-red-1</a></span></td>
+</tr>
+<tr>
+<td><code>.link-red-2</code></td>
+<td><span class="link-red-2"><a href="#">.link-red-2</a></span></td>
+</tr>
+<tr>
+<td><code>.link-red-3</code></td>
+<td><span class="link-red-3"><a href="#">.link-red-3</a></span></td>
+</tr>
+<tr>
+<td><code>.link-red-4</code></td>
+<td><span class="link-red-4"><a href="#">.link-red-4</a></span></td>
+</tr>
+<tr>
+<td><code>.link-black</code></td>
+<td><span class="link-black text-black-4"><a href="#">.link-black</a></span></td>
+</tr>
+<tr>
+<td><code>.link-black-1</code></td>
+<td><span class="link-black-1 text-black-4"><a href="#">.link-black-1</a></span></td>
+</tr>
+<tr>
+<td><code>.link-black-2</code></td>
+<td><span class="link-black-2 text-black-4"><a href="#">.link-black-2</a></span></td>
+</tr>
+<tr>
+<td><code>.link-black-3</code></td>
+<td><span class="link-black-3 text-black"><a href="#">.link-black-3</a></span></td>
+</tr>
+<tr>
+<td><code>.link-black-4</code></td>
+<td><span class="link-black-4 text-black"><a href="#">.link-black-4</a></span></td>
+</tr>
+</tbody>
+</table>
+<h3>Typography classes</h3>
+<table>
+<thead>
+<tr>
+<th>CSS Class</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.text-size-rxl</code></td>
+<td>set a extra large font size that scales with the width of the viewport (to a point)</td>
+<td></td>
+</tr>
+<tr>
+<td><code>.text-shadow</code></td>
+<td>set a text shadow</td>
+<td><span class="text-shadow">.text-shadow</span></td>
+</tr>
+<tr>
+<td><code>.text-justify</code></td>
+<td>justify text to the margins</td>
+<td><span class="text-justify">.text-justify</span></td>
+</tr>
+<tr>
+<td><code>.text-line-sm</code></td>
+<td>set a small line height</td>
+<td><span class="text-line-sm">.text-line-sm</span></td>
+</tr>
+<tr>
+<td><code>.text-line-lg</code></td>
+<td>set a large line height</td>
+<td><span class="text-line-lg">.text-line-lg</span></td>
+</tr>
+<tr>
+<td><code>.text-nowrap</code></td>
+<td>disable word wrapping</td>
+<td><span class="text-nowrap">.text-nowrap</span></td>
+</tr>
+<tr>
+<td><code>.text-center</code></td>
+<td>center text in its parent element</td>
+<td><span style="display: block;" class="text-center">.text-center</span></td>
+</tr>
+<tr>
+<td><code>.blur</code></td>
+<td>blur the text</td>
+<td><span style="blur">.blur</span></td>
+</tr>
+</tbody>
+</table>
+<h3>Spacing</h3>
+<p>Margin sets varying levels of outside space around the element. This style provides options for small and medium margins.</p>
+<table>
+<thead>
+<tr>
+<th>CSS Class</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.m-sm</code></td>
+<td><div class="bg-red"><div class="text-center bg-red-4 m-sm">m-sm</div></div></td>
+</tr>
+<tr>
+<td><code>.m-md</code></td>
+<td><div class="bg-red"><div class="text-center bg-red-4 m-md">m-md</div></div></td>
+</tr>
+</tbody>
+</table>
+<p>Padding sets varying levels of inside space around the element. This style provides options for small and medium levels of padding.</p>
+<table>
+<thead>
+<tr>
+<th>CSS Class</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.p-sm</code></td>
+<td><div class="bg-red"><div class="text-center bg-red-4 p-sm">p-sm</div></div></td>
+</tr>
+<tr>
+<td><code>.p-md</code></td>
+<td><div class="bg-red"><div class="text-center bg-red-4 p-md">p-md</div></div></td>
+</tr>
+</tbody>
+</table>
+<h3>Block sizing</h3>
+<table>
+<thead>
+<tr>
+<th>CSS Class</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.h-whole</code></td>
+<td>sets element height to viewport height</td>
+</tr>
+<tr>
+<td><code>.w-whole</code></td>
+<td>sets element width to viewport width</td>
+</tr>
+<tr>
+<td><code>.h-parent</code></td>
+<td>sets element height to parent height</td>
+</tr>
+<tr>
+<td><code>.w-parent</code></td>
+<td>sets element width to parent width</td>
+</tr>
+<tr>
+<td><code>.h-sm</code></td>
+<td>sets height to small</td>
+</tr>
+<tr>
+<td><code>.w-sm</code></td>
+<td>sets width to small</td>
+</tr>
+<tr>
+<td><code>.no-overflow</code></td>
+<td>hides overflowing content in an element</td>
+</tr>
+</tbody>
+</table>
+<h3>Alignment</h3>
+<table>
+<thead>
+<tr>
+<th>CSS Class</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.list-linear</code></td>
+<td>linearize a list</td>
+<td><ol class="list-linear"><li>Item 1</li><li>Item 2</li></ul></td>
+</tr>
+<tr>
+<td><code>.list-spread</code></td>
+<td>spread list items; used with <code>.list-linear</code></td>
+<td><ol class="list-linear list-spread"><li>Item 1</li><li>Item 2</li></ul></td>
+</tr>
+<tr>
+<td><code>.flex</code></td>
+<td>make element a flex container</td>
+<td></td>
+</tr>
+<tr>
+<td><code>.v-center</code></td>
+<td>vertically center child elements; used with <code>.flex</code></td>
+<td><div class="flex v-center h-md"><ol class="list-linear list-spread"><li>Item 1</li><li>Item 2</li></ul></div></td>
+</tr>
+<tr>
+<td><code>.h-center</code></td>
+<td>horizontally center child elements; used with <code>.flex</code></td>
+<td><div class="flex h-center h-md"><ol class="list-linear list-spread"><li>Item 1</li><li>Item 2</li></ul></div></td>
+</tr>
+<tr>
+<td><code>.v-base</code></td>
+<td>vertically place child elements along base; used with <code>.flex</code></td>
+<td><div class="flex v-base h-md"><ol class="list-linear list-spread"><li>Item 1</li><li>Item 2</li></ul></div></td>
+</tr>
+</tbody>
+</table>
+<h3>Image filters</h3>
+<table>
+<thead>
+<tr>
+<th>CSS Class</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.blur</code></td>
+<td>blur the element</td>
+<td><img class="h-sm blur" src="https://robohash.org/.blur?set=set4" /></td>
+</tr>
+<tr>
+<td><code>.obscure</code></td>
+<td>obscure the element</td>
+<td><img class="h-sm obscure" src="https://robohash.org/.obscure?set=set4" /></td>
+</tr>
+<tr>
+<td><code>.image-fit</code></td>
+<td>center and expands an image within its dimensions</td>
+<td><img class="h-sm image-fit" src="https://robohash.org/.image-fit?set=set4" /></td>
+</tr>
+<tr>
+<td><code>.image-background</code></td>
+<td>move an image to the background of its parent element</td>
+<td><div class="text-center"><img style="display: inline;" class="h-sm image-fit image-background" src="https://robohash.org/.image-background?set=set4" /><span>.image-background</span></div></td>
+</tr>
+</tbody>
+</table>
+
+                </section>
+        </main>
+        
+
+        <footer class="h-quarter bg-black text-white link-red">
+    <ul id="socials" class="list-linear list-spread v-center p-sm m-auto">
+        <li><a href="https://x.com/dsaiowacity"><i class="fa-brands fa-x-twitter"></i><span class="sm-hide">X</span></a></li>
+        <li><a href="https://www.facebook.com/IowaCityDSA/"><i class="fa-brands fa-facebook-f"></i><span class="sm-hide">Facebook</span></a></li>
+        <!-- <li><a href="#"><i class="fa-brands fa-mastodon"></i><span class="sm-hide">Mastodon</span></a></li> -->
+        <li><a href="https://discord.com/invite/rkqkEKvCyB"><i class="fa-brands fa-discord"></i><span class="sm-hide">Discord</span></a></li>
+        <li><a href="https://www.instagram.com/iowacitydsa/"><i class="fa-brands fa-instagram"></i></i><span class="sm-hide">Instagram</span></a></li>
+        <li><a href="https://github.com/wjdenny/icdsa"><i class="fa-brands fa-github"></i><span class="sm-hide">GitHub</span></a></li>
+    </ul>
+    <ul id="map" class="list-linear list-spread v-center p-sm m-auto">
+        <li><a href="/about">About</a></li>
+        <li><a href="/events">Events</a></li>
+        <li><a href="https://act.dsausa.org/donate/membership/">Join</a></li>
+        <li><a href="https://donorbox.org/icdsa-donation">Donate</a></li>
+    </ul>
+    <div id="copyright" class="flex v-center h-center text-black-4">&copy;2024 Iowa City Democratic Socialists of America</div>
+</footer>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+/* 
+ * The body is divided into one column with three rows; a header, the main body,
+ * and a footer. The header and footer are as big as they need to be, but the
+ * body takes up all the rest of the space.
+*/
+body {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    
+    grid-template-rows: auto 1fr auto;
+}
+
+header { grid-area: header }
+main { grid-area: main }
+footer { grid-area: footer }
+
+/* Define a grid for the header section including a logo and the rest of the
+ * header which includes a site title and navigation menu. On larger screens,
+ * the header should take up only one line.
+*/
+header {
+    display: grid;
+    grid-template-areas:
+        "logo header";
+    grid-template-columns: auto 1fr;
+}
+
+#site-logo { grid-area: logo }
+
+#site-header { grid-area: header; }
+#site-header {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "nav";
+    grid-template-columns: 270px;
+}
+
+#site-title { grid-area: title }
+#site-nav { grid-area: nav }
+
+@media screen and (min-width: 810px) {
+    #site-header {
+        grid-template-areas: "title . nav";
+        grid-template-columns: auto 1fr 270px;
+    }
+}
+
+/* Define a footer with a site map, list of social links, and a copyright notice. */
+footer {
+    display: grid;
+    grid-template-areas:
+        "socials"
+        "map"
+        "copyright";
+}
+
+#copyright { grid-area: copyright; }
+#socials { grid-area: socials; }
+#map {grid-area: map; }
+
+@media screen and (min-width: 810px) {
+    footer {
+        grid-template-areas:
+            "socials map"
+            "copyright copyright";
+    }
+}
